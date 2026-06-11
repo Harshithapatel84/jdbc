@@ -8,13 +8,18 @@ import java.sql.Statement;
 public class CreatePayment {
 
     public static void main(String[] args) {
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
 
         System.out.println("payment credited");
 
         String url = "jdbc:mysql://localhost:3306/payment_db";
         String userName = "root";
         String password = "root";
-        String sqlQuery="insert into payment values('56748','riya',670,'credit','2026-06-10')";
+        String sqlQuery="insert into payment values('125','siya',400,'credit','2026-06-12')";
         Connection connection=null;
         Statement statement=null;
         try {
