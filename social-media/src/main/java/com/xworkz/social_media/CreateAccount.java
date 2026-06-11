@@ -14,7 +14,7 @@ public class CreateAccount {
         String password = "root";
 
         String sqlQuery =
-                "insert into social_media values('harshitha',5000,'Instagram',120)";
+                "insert into social_media values('rahul',300,'snap',120)";
 
         Connection connection = null;
         Statement statement = null;
