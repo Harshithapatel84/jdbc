@@ -11,7 +11,7 @@ public class createAccount {
         String url = "jdbc:mysql://localhost:3306/bank_db";
         String user_name = "root";
         String password = "root";
-        String sqlQuery = "insert into bank_info values('SBI',5,'commercial',20)";
+        String sqlQuery = "insert into bank_info values('canara',2,'finance',30)";
         Connection connect=null;
         Statement statement=null;
         try {
