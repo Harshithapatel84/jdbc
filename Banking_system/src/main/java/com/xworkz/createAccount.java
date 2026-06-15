@@ -17,7 +17,7 @@ public class createAccount {
         try {
             connect = DriverManager.getConnection(url, user_name, password);
             statement = connect.createStatement();
-            statement.execute(sqlQuery);
+            statement.executeUpdate(sqlQuery);
             System.out.println("data inserted..");
         } catch (SQLException e) {
             throw new RuntimeException(e);
